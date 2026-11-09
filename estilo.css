@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&display=swap');
+:root{--ciruela:#2B1B2E;--crema:#F4E4CF;--luz:#FFC93C;--coral:#FF6B5A}
+*{box-sizing:border-box}
+body{margin:0;background:var(--ciruela);color:var(--crema);font:18px/1.6 'Bricolage Grotesque',system-ui,sans-serif}
+main{max-width:760px;margin:0 auto;padding:48px 20px}
+header{display:flex;align-items:center;gap:16px;margin-bottom:28px}
+header img{width:72px;height:72px}
+h1{font-weight:800;font-size:44px;margin:0;line-height:1.05}
+h2{color:var(--luz);margin-top:32px}
+a{color:var(--luz)}
+.lema{color:var(--luz);font-size:22px;margin:0}
+footer{margin-top:48px;font-size:15px;opacity:.7}
