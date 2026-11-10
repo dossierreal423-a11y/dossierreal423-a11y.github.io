@@ -1,15 +1,49 @@
 <!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Recoveco Factory</title><link rel="stylesheet" href="estilo.css"></head><body><main>
-<header><img src="reco.png" alt="Reco, la mascota de Recoveco"><div><h1>Recoveco Factory</h1><p class="lema">Siempre hay un rincón que nadie miró.</p></div></header>
-<nav class="menu"><a href="index.html">Inicio</a> · <a href="privacidad.html">Política de privacidad</a> · <a href="terminos.html">Condiciones del servicio</a></nav>
-<a class="yt" href="https://www.youtube.com/@RecovecoOficial" title="Canal Recoveco en YouTube"><img src="developed-with-youtube.png" alt="Developed with YouTube"></a>
-<p><strong>Recoveco Factory</strong> es la herramienta de producción interna del canal de YouTube
-<a href="https://www.youtube.com/@RecovecoOficial">Recoveco (@RecovecoOficial)</a>. Prepara vídeos cortos
-(YouTube Shorts) sobre historia, ciencia, inventos y curiosidades, y los sube al canal de Recoveco.</p>
-<h2>Qué hace</h2>
-<ul><li>Sube a YouTube los vídeos que produce el equipo de Recoveco, con su título y descripción.</li>
-<li>Solo actúa sobre el canal de Recoveco, con la autorización de su propietario.</li>
-<li>No es un servicio para el público: no tiene usuarios externos ni registro.</li></ul>
-<p><a href="privacidad.html">Política de privacidad</a> · <a href="terminos.html">Condiciones del servicio</a></p>
-<footer>© Recoveco · Recoveco Factory usa los servicios de la API de YouTube.</footer>
-</main></body></html>
+<title>Recoveco Factory</title><meta name="description" content="Recoveco Factory: herramienta interna de producción del canal de YouTube Recoveco.">
+<link rel="icon" href="reco.svg"><link rel="stylesheet" href="estilo.css"></head><body>
+<header class="barra"><div class="cont barra-in">
+ <a class="marca" href="index.html"><img src="reco.svg" alt="" width="40" height="40">Recoveco Factory</a>
+ <nav><a href="index.html" class=on>Inicio</a><a href="index.html#como">Cómo funciona</a><a href="privacidad.html">Privacidad</a><a href="terminos.html">Condiciones</a></nav>
+ <a class="btn btn-canal" href="https://www.youtube.com/@RecovecoOficial"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="4"/><path d="M10 9l5 3-5 3z"/></svg>Canal Recoveco</a>
+</div></header>
+
+<section class="heroe"><div class="cont heroe-in">
+ <div>
+  <p class="eti">Herramienta interna</p>
+  <h1>Recoveco Factory</h1>
+  <p class="sub">La herramienta de producción del canal de YouTube <strong>Recoveco</strong>.</p>
+  <p>Prepara vídeos cortos originales sobre historia, ciencia, inventos y curiosidades, y los sube al canal
+  de Recoveco con la API de datos de YouTube (YouTube Data API v3).</p>
+  <div class="ctas"><a class="btn" href="https://www.youtube.com/@RecovecoOficial"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="4"/><path d="M10 9l5 3-5 3z"/></svg>Ver el canal Recoveco</a>
+  <a class="btn btn-sec" href="#como">Cómo funciona</a></div>
+ </div>
+ <div class="reco"><div class="halo"></div><img src="reco.svg" alt="Reco, el hurón explorador mascota de Recoveco"></div>
+</div></section>
+<section class="temas"><div class="cont temas-in">
+ <span><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2z"/><path d="M4 19V5"/></svg>Historia</span><span><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 3h6M10 3v6L4 19a1 1 0 0 0 1 2h14a1 1 0 0 0 1-2l-6-10V3"/></svg>Ciencia</span><span><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18h6M10 21h4"/><path d="M12 3a6 6 0 0 0-4 10.5c.7.7 1 1.5 1 2.5h6c0-1 .3-1.8 1-2.5A6 6 0 0 0 12 3z"/></svg>Inventos</span>
+ <span><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9c3-2 6-2 9 0 3-2 6-2 9 0-1 5-4 6-6 5-1-.5-2-1-3-1s-2 .5-3 1c-2 1-5 0-6-5z"/></svg>Espías</span><span><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M6 6l2.5 2.5M15.5 15.5L18 18M6 18l2.5-2.5M15.5 8.5L18 6"/></svg>Curiosidades</span>
+</div></section>
+<main class="cont">
+ <h2 class="tit" id="como">Cómo funciona</h2>
+ <ol class="pasos">
+  <li><svg class="ico ico-paso" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="6"/><path d="M20 20l-4.5-4.5"/></svg><h3>1 · Investigación y guion</h3><p>Se elige una historia real y se escribe el guion con fuentes verificables.</p></li>
+  <li><svg class="ico ico-paso" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></svg><h3>2 · Voz y animación</h3><p>Se generan la narración y la animación en un servidor privado del propietario.</p></li>
+  <li><svg class="ico ico-paso" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg><h3>3 · Revisión</h3><p>El propietario del canal revisa cada vídeo, su título y su descripción antes de subirlo.</p></li>
+  <li><svg class="ico ico-paso" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 16V4M7 9l5-5 5 5"/><path d="M4 16v3a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-3"/></svg><h3>4 · Subida a YouTube</h3><p>La herramienta sube el vídeo aprobado al canal de Recoveco (<code>videos.insert</code>).</p></li>
+ </ol>
+ <div class="api">
+  <a class="yt" href="https://www.youtube.com/@RecovecoOficial" title="Canal Recoveco en YouTube"><img src="developed-with-youtube.png" alt="Developed with YouTube"></a>
+  <p>Permiso único: <code>youtube.upload</code> (subir vídeos). La herramienta no lee, muestra, guarda ni comparte
+  datos de YouTube ni de ninguna cuenta. <a href="privacidad.html">Política de privacidad</a> ·
+  <a href="terminos.html">Condiciones del servicio</a></p>
+ </div>
+ <section class="aviso"><svg class="ico ico-caja" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg><div><h2>Uso interno</h2>
+  <p>Recoveco Factory es de uso exclusivo del propietario del canal Recoveco. No es un servicio público:
+  no tiene registro, usuarios externos ni acceso de terceros.</p></div></section>
+</main>
+<footer class="pie"><div class="cont pie-in">
+ <span class="marca"><img src="reco.svg" alt="" width="32" height="32">Recoveco Factory</span>
+ <nav><a href="index.html">Inicio</a><a href="privacidad.html">Política de privacidad</a>
+ <a href="terminos.html">Condiciones del servicio</a><a href="mailto:jarithneira@gmail.com">Contacto</a></nav>
+ <p>© 2026 Recoveco · Herramienta interna. Recoveco Factory utiliza los servicios de la API de YouTube.</p>
+</div></footer></body></html>
