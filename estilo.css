@@ -10,3 +10,7 @@ h2{color:var(--luz);margin-top:32px}
 a{color:var(--luz)}
 .lema{color:var(--luz);font-size:22px;margin:0}
 footer{margin-top:48px;font-size:15px;opacity:.7}
+
+.menu{margin:-8px 0 28px;font-size:16px}
+.yt{display:inline-block;margin:8px 0 4px}
+.yt img{height:100px;margin-left:-26px;width:auto;display:block;border-radius:6px}
